@@ -21,7 +21,7 @@
 				"x": {
 					"field": "num_win",
 					"type": "quantitative",
-					"title": "จำนวนวิน",
+					"title": "จำนวนวินรถจักรยานยนต์",
 					"sort": "descending"
 				},
 				"y": {
@@ -45,7 +45,7 @@
 					{
 						"field": "num_win",
 						"type": "quantitative",
-						"title": "จำนวนวินรถจักรยานยนต์"
+						"title": "จำนวนวิน"
 					}
 				]
 			}
@@ -109,7 +109,7 @@
 					{
 						"field": "num_rider",
 						"type": "quantitative",
-						"title": "จำนวนผู้ขับขี่รถจักรยานยนต์"
+						"title": "จำนวนผู้ขับขี่"
 					}
 				]
 			}

@@ -1,0 +1,118 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+	"description": "My interactive chart",
+	"data": {
+		"url": "https://raw.githubusercontent.com/Chanachon6272023721/vega/master/inf_ข้อมูลจำนวนวินและผู้ขับขี่รถจักรยานยนต์สาธารณะ%20พ.ศ.2560.csv"
+	},
+	"title": {
+		"text": "ข้อมูลจำนวนวินและผู้ขับขี่รถจักรยานยนต์สาธารณะ พ.ศ.2560",
+		"anchor": "middle"
+	},
+	"spacing": 0,
+	"hconcat": [{
+			"selection": {
+				"pts": {
+					"type": "single"
+				}
+			},
+			"mark": "bar",
+			"title": "จำนวนวิน",
+			"encoding": {
+				"x": {
+					"field": "num_win",
+					"type": "quantitative",
+					"title": "จำนวนวิน",
+					"sort": "descending"
+				},
+				"y": {
+					"field": "dname",
+					"type": "nominal",
+					"axis": null
+				},
+				"color": {
+					"condition": {
+						"selection": "pts",
+						"field": "dname",
+						"type": "nominal",
+						"legend": null
+					},
+					"value": "grey"
+				},
+				"tooltip": [{
+						"field": "dname",
+						"type": "nominal"
+					},
+					{
+						"field": "num_win",
+						"type": "quantitative",
+						"title": "จำนวนวิน"
+					}
+				]
+			}
+		},
+		{
+			"width": 20,
+			"view": {
+				"stroke": null
+			},
+			"mark": {
+				"type": "text",
+				"align": "center"
+			},
+			"encoding": {
+				"y": {
+					"field": "dname",
+					"type": "nominal",
+					"axis": null
+				},
+				"text": {
+					"field": "dname",
+					"type": "nominal"
+				}
+			}
+		},
+		{
+			"selection": {
+				"pts": {
+					"type": "single"
+				}
+			},
+			"mark": "bar",
+			"title": "จำนวนผู้ขับขี่รถจักรยานยนต์",
+			"encoding": {
+				"x": {
+					"field": "num_rider",
+					"type": "quantitative",
+					"title": "จำนวนผู้ขับขี่รถจักรยานยนต์"
+				},
+				"y": {
+					"field": "dname",
+					"type": "nominal",
+					"title": null,
+					"axis": null
+				},
+				"color": {
+					"condition": {
+						"selection": "pts",
+						"field": "dname",
+						"type": "nominal",
+						"title": null,
+						"legend": null
+					},
+					"value": "grey"
+				},
+				"tooltip": [{
+						"field": "dname",
+						"type": "nominal",
+						"title": "เขต"
+					},
+					{
+						"field": "num_rider",
+						"type": "quantitative",
+						"title": "จำนวนผู้ขับขี่รถจักรยานยนต์"
+					}
+				]
+			}
+		}
+	]
+}

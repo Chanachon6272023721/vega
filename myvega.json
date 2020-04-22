@@ -45,7 +45,7 @@
 					{
 						"field": "num_win",
 						"type": "quantitative",
-						"title": "จำนวนวิน"
+						"title": "จำนวนวินรถจักรยานยนต์"
 					}
 				]
 			}

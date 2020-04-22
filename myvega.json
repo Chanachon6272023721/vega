@@ -16,7 +16,7 @@
 				}
 			},
 			"mark": "bar",
-			"title": "วิน",
+			"title": "วินฯ",
 			"encoding": {
 				"x": {
 					"field": "num_win",
@@ -78,7 +78,7 @@
 				}
 			},
 			"mark": "bar",
-			"title": "ผู้ขับขี่",
+			"title": "ผู้ขับขี่ฯ",
 			"encoding": {
 				"x": {
 					"field": "num_rider",
